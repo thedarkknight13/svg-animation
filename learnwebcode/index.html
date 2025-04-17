@@ -9,17 +9,59 @@
 <body>
     <h1>SVG Essentials</h1>
 
-    <!-- <img src="drawing.svg"> -->
-    <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
-        <g class="layer">
-            <title>Layer 1</title>
-            <rect fill="#ff7f00" height="83" id="svg_3" stroke="#000000" stroke-width="5" width="131" x="44.77777" y="99.66667"/>
-            <path d="m312.777766,121.666674c0,0 88.999998,-78.999998 217.999995,10c128.999997,88.999998 -278.999994,166.999996 -66.999999,219.999995c211.999996,52.999999 -150.999997,-229.999995 -150.999997,-229.999995l0.000001,0z" fill="#ff7f00" id="svg_2" stroke="#000000" stroke-width="5"/>
-            <path d="m70.777771,259.666671l123.222229,-17.666671l107,35l-49,82l92,47l-203,15" fill="#00ff00" id="svg_1" stroke="#000000" stroke-width="0"/>
-            <path class="my-shape" d="m139.77777,420.666668c0,0 -154.999997,8 -114.999998,-60.999999c39.999999,-68.999999 -55.999999,-166.999996 -6,-104.999998c49.999999,61.999999 49.999999,61.999999 49.222228,61.333329c-0.777771,-0.66667 2.777771,-59.333329 2,-60c-0.777771,-0.666671 69.77777,164.666668 69.77777,164.666668z" fill="#ff00ff" id="svg_5" stroke="#000000" stroke-width="0" transform="matrix(1 0 0 1 0 0)"/>
-        </g>
-    </svg>
+    <div class="buttons">
+        <button data-add="blue-eyes">Blue eyes</button>
+        <button data-remove="blue-eyes">Green eyes</button>
+        <button data-add="sad">Sad</button>
+        <button data-remove="sad">Happy</button>
+        <button data-add="move-around">Move around</button>
+        <button data-remove="move-around">Sit still</button>
+    </div>
+
+    <div class="svg-container">
+        <svg class="cat" width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+            <g class="layer">
+                <title>Layer 1</title>
+                <path d="m446.888893,383.333325" fill="#ff7f00" id="svg_2" opacity="0.5" stroke="#000000" stroke-width="15"/>
+                <path d="m49.999985,416.333325l73.000015,-79.333325l-69,-107c0,0 63.999984,-160.666668 8.999985,-178.666668c-54.999999,-18 130.999997,1 126.999997,26.999999c-4,25.999999 7,46.999999 6.000018,46.666668c-0.999982,-0.333331 157.999979,-78.666668 203.999978,-37.666669c45.999999,40.999999 40.999999,-60.999999 40.000022,-61.333331c-0.999977,-0.333333 104.999975,-4.666667 104.999975,24.333332c0,28.999999 -86.999998,220.999995 -59.999999,232.999995c26.999999,12 39.999999,108.999998 67.999999,112.999998c27.999999,4 -150.999997,-8 -150.999997,-8c0,0 -88.999998,59.999999 -229.999995,-10c-140.999997,-69.999999 -121.999997,37.999999 -121.999997,37.999999z" fill="#999999" id="svg_4" stroke="#000000" stroke-width="0"/>
+                <g class="eyes">
+                    <ellipse cx="232.49989" cy="201.83331" fill="#ffffff" id="svg_5" rx="60.579499" ry="79.699621" stroke="#000000" stroke-width="0" transform="rotate(15 232.5 201.833)"/>
+                    <ellipse cx="352.222212" cy="198.33333" fill="#ffffff" id="svg_7" rx="68.999997" ry="81" stroke="#000000" stroke-width="0" transform="matrix(1 0 0 1 0 0) rotate(-15 352.222 198.333)"/>
+                    <g class="inner-eyes">
+                        <g class="inner-eye-group">
+                            <ellipse class="eye-color" cx="239.055554" cy="244.833336" fill="#007f00" id="svg_18" rx="23.578586" ry="29.031806" stroke="#000000" stroke-width="0" transform="rotate(10 239.056 244.833)"/>
+                            <g class="pupil">
+                                <ellipse cx="239.055555" cy="259.333332" fill="#ffffff" id="svg_23" rx="3.5" ry="4" stroke="#000000" stroke-width="0" transform="matrix(1 0 0 1 0 0)"/>
+                            </g>
+                        </g>
+                        <g class="inner-eye-group">
+                            <ellipse class="eye-color" cx="353.055554" cy="248.333332" fill="#007f00" id="svg_20" rx="22.499999" ry="27" stroke="#000000" stroke-width="0" transform="rotate(-10 353.056 248.333)"/>
+                            <g class="pupil">
+                                <ellipse cx="356.555555" cy="264.833332" fill="#ffffff" id="svg_25" rx="4" ry="4.5" stroke="#000000" stroke-width="0"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g class="nose">
+                    <path d="m251.222211,298.333332c0,0 20,27.999999 30.999999,19c11,-9 63.999999,-19 63.77779,-19.333332c-0.222209,-0.333332 -38.77779,-33.666667 -54.77779,-25.666667c-16,8 -39.999999,25.999999 -39.999999,25.999999z" fill="#ffaaaa" id="svg_13" stroke="#000000" stroke-width="0" transform="matrix(1 0 0 1 0 0)"/>
+                </g>
+                <g class="mouth-area">
+                    <path class="mouth" d="m167.555556,309.333333c0,0 53.999999,58.999999 115.999998,47.999999c61.999999,-11 125.999997,-51.999999 125.444447,-52.333332c-0.555551,-0.333333 -95.444447,76.333331 -128.444447,71.333331c-32.999999,-5 -112.999998,-66.999999 -112.999998,-66.999999z" fill="#000000" id="svg_17" stroke="#000000"/>
+                </g>
+                <g class="whisters">
+                    <g class="left-whiskers">
+                        <line fill="none" id="svg_26" stroke="#cccccc" x1="249.444428" x2="26.444432" y1="313.333327" y2="257.333328"/>
+                        <line fill="none" id="svg_27" stroke="#cccccc" x1="240.444428" x2="41.444432" y1="323.333326" y2="297.333327"/>
+                    </g>
+                    <g class="right-whiskers">
+                        <line fill="none" id="svg_28" stroke="#cccccc" x1="326.444426" x2="540.444422" y1="308.333327" y2="249.333328"/>
+                        <line fill="none" id="svg_29" stroke="#cccccc" x1="329.444426" x2="549.444421" y1="320.333327" y2="336.333326"/>
+                    </g>
+                </g>
+            </g> 
+        </svg>
+    </div>
 
     <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -29,5 +71,7 @@
         Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
         versions of Lorem Ipsum.
     </p>
+
+    <script src="js/main.js"></script>
 </body>
 </html> 
