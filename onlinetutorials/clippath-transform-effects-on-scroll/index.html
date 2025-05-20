@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipPath Transform Effects on Scroll</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2 class="title">Scroll To See Magic Again...</h2>
+    <section></section>
+    <div class="container">
+        <h2>Also Watch Part 1 and 2... Link in Video Description</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam urna, 
+            gravida nec ornare a, vestibulum id est. Quisque in ipsum id sem efficitur 
+            dapibus. Proin et turpis ut augue pretium tempus in non nibh. Suspendisse 
+            pretium ac ex et auctor. Nulla facilisi. Vivamus volutpat tellus felis, vitae 
+            dapibus est pharetra nec. Suspendisse potenti. Nullam quis luctus dui, non 
+            rutrum lacus. Suspendisse vestibulum neque sit amet nisl convallis eleifend.
+            Praesent malesuada velit felis, at egestas nunc tempus eget. Sed condimentum
+            odio eget lacus varius eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit. Sed nisl nisl, venenatis non metus ac, dapibus bibendum neque. Sed aliquet 
+            viverra ante, eget imperdiet massa fermentum egestas. Pellentesque gravida magna
+            a quam fringilla, vel condimentum quam semper. Interdum et malesuada fames ac
+            ante ipsum primis in faucibus. Proin ornare nibh eget mauris consequat porta.
+            <br><br>
+       
+            Sed nec mi egestas ligula tempor placerat ut sed risus. Duis a tempor odio.
+            Quisque congue nulla et ultrices bibendum. Sed maximus leo ac est pretium 
+            facilisis. Maecenas sed sapien justo. Cras ex enim, laoreet eget magna eu, 
+            congue mattis ipsum. Pellentesque interdum orci eu varius molestie. Ut eget 
+            augue eget diam volutpat vehicula. Suspendisse sit amet congue risus. Maecenas 
+            nec quam vitae felis pulvinar tristique sed ac nibh. Mauris ac augue eget lacus 
+            viverra rutrum non in mi. Aliquam a egestas tellus, vitae tincidunt metus. 
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+            ac turpis egestas. Fusce ut hendrerit magna, interdum euismod ante. Nunc ante 
+            odio, pretium at molestie eget, ornare vel eros. Class aptent taciti sociosqu 
+            ad litora torquent per conubia nostra, per inceptos himenaeos.
+            <br><br>
+        
+            Nam condimentum consectetur velit at suscipit. Morbi elementum porta fermentum. 
+            In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit. Integer ante eros, tristique id tortor eu, tincidunt molestie lacus. 
+            Praesent eu libero ante. Nullam augue tellus, convallis eu fringilla id, faucibus 
+            nec risus. Aenean tincidunt purus vel orci efficitur egestas. Sed enim elit, 
+            euismod facilisis magna nec, faucibus dapibus mi. Praesent id mauris a turpis 
+            bibendum rhoncus sit amet id risus. Duis laoreet laoreet commodo. Duis eleifend 
+            efficitur molestie. Vivamus vel eros ac risus ultricies vulputate sit amet ut eros. 
+            Duis nec viverra augue, eu molestie dui. Donec facilisis non neque sed eleifend.
+        </p>
+    </div>
+    <script type="text/javascript">
+        let section = document.querySelector('section');
+        window.addEventListener('scroll', () => {
+            var value = window.scrollY;
+            section.style.clipPath = 'circle(' + value + 'px at center)';
+        })
+    </script>
+</body>
+</html>
